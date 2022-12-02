@@ -1,460 +1,659 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Welcome to ITC Businesses</title>
-	<link rel="shortcut icon" type="image/x-icon" href="https://itcportal.co.in/home/assets/images/favicon.png">
-	<link
-		href="http://fonts.googleapis.com/css?family=lato:Open+Sans:400,300,600,700,800%7CPoppins:200,300,400,500,500i,600,700,800%7CRoboto:400,500"
-		rel="stylesheet" type="text/css">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/responsive.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link href="assets/css/animate.css" rel="stylesheet">
+  <link href="assets/css/swiper.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="assets/css/fontawesome.html">
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <title>ITC Distrutor</title>
 
-	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/font-awesome.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/ionicons.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/jquery.fancybox.css" rel="stylesheet" type="text/css">
-	<!--Main Slider-->
-	<link href="assets/css/settings.css" type="text/css" rel="stylesheet" media="screen">
-	<link href="assets/css/layers.css" type="text/css" rel="stylesheet" media="screen">
-	<link href="assets/css/layers.css" type="text/css" rel="stylesheet" media="screen">
-	<link href="assets/css/owl.carousel.css" type="text/css" rel="stylesheet" media="screen">
-	<link href="assets/css/style.css" rel="stylesheet">
-	<link href="assets/css/header.css" rel="stylesheet" type="text/css" />
-	<link href="assets/css/footer.css" rel="stylesheet" type="text/css" />
-	<link href="assets/css/index.css" rel="stylesheet" type="text/css" />
-	<link href="assets/css/theme-color/default.css" rel="stylesheet" type="text/css" id="theme-color" />
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119595512-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
+  <style>
+    .popup {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .3);
+    display: grid;
+    place-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 200ms ease-in-out opacity;
+}
+.popup-content {
+    width: clamp(300px, 90vw, 500px);
+    background-color: #fff;
+    padding: clamp(1.5rem, 100vw, 3rem);
+    box-shadow: 0 0 .5em rgba(0, 0, 0, .5);
+    border-radius: .5em;
+    opacity: 0;
+    transform: translateY(20%);
+    transition: 200ms ease-in-out opacity,
+                200ms ease-in-out transform;
+    position: relative;
+}
+.popup h1 {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    line-height: 1;
+    cursor: pointer;
+    user-select: none;
+}
+.popup h1:active {
+    transform: scale(.9);
+}
 
-		gtag('config', 'UA-119595512-1');
-	</script>
-<style>
-	.containerz {
-		position: relative;
-    text-align: center;
-    color: white;
-	}
-	
-	.centered {
-		position: absolute;
-    top: 60%;
-    background-color: #1a2354;
-	}
-	</style>
+.showPopup {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+}
+  </style>
 </head>
 
 <body>
-	<!--loader-->
-	<div id="preloader">
-		<div class="sk-circle">
-			<div class="sk-circle1 sk-child"></div>
-			<div class="sk-circle2 sk-child"></div>
-			<div class="sk-circle3 sk-child"></div>
-			<div class="sk-circle4 sk-child"></div>
-			<div class="sk-circle5 sk-child"></div>
-			<div class="sk-circle6 sk-child"></div>
-			<div class="sk-circle7 sk-child"></div>
-			<div class="sk-circle8 sk-child"></div>
-			<div class="sk-circle9 sk-child"></div>
-			<div class="sk-circle10 sk-child"></div>
-			<div class="sk-circle11 sk-child"></div>
-			<div class="sk-circle12 sk-child"></div>
-		</div>
-	</div>
+  <header class="header1">
+    <div style="background-color: #1a2255;" class="header_top">
+      <div class="container">
+        <div class="thm-container clearfix">
+          <div class="logo pull-left main-logo"><a href="index.html"><img style="width: 40px;"
+                src="https://www.itcportal.com/images/logo_itc.png" class="img-responsive" alt=""></a></div>
+          <div class="header-right-info pull-right">
+            <ul>
+              <li>
+                <div class="single-header-right-info">
+                  <div class="icon-box"><i class="fa fa-phone"></i></div>
+                  <div class="text-box">
+                    <h5 class="mt-4 text-white" style="margin-top: 16px; color:white"> support@itcportal.co.in</h5>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="single-header-right-info">
+                  <div class="icon-box"><i class="fa fa-map-marker"></i></div>
+                  <div class="text-box">
+                    <h5 class="mt-4 text-white">
+                      <p class="text-white" style="margin-top: 16px; color:white">NEHRU ROAD, KOLKATA, INDIA - 700071
+                      </p>
+                    </h5>
 
-	<!--loader-->
+                  </div>
+                </div>
+              </li>
 
-	<!-- HEADER -->
-	<header id="header" class="header header-1 header_tran">
-		<div id="top-bar" class="top-bar-section top-bar-bg-color" style="background-color: #eeefee;">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-8">
-						<div class="top_loction pull-left">
-							<ul>
-								<li>
-									<a href="#!" style="color: #1a2354; font-size: 14px;"><i
-											class="fa fa-map-marker"></i> ITC LIMITED, Virginia House, 37, J. L. Nehru
-										Road, Kolkata, India - 700071 </a>
-								</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tt-header">
+      <div class="container">
+        <div class="top-inner clearfix">
+          <a class="responsive_logo" href="index.html"><img src="https://www.itcportal.com/images/logo_itc.png"
+              alt=""></a>
+          <div class="cmn-toggle-switch"><span></span></div>
+        </div>
+        <div class="toggle-block">
+          <div class="toggle-block-container">
+            <nav class="main-nav clearfix">
+              <ul>
+                <li class="active parent">
+                  <a href="index.html"><span>Home</span></a>
 
+                </li>
+                <li class="parent">
+                  <a href="about.html"><span>About Us</span></a>
 
-							</ul>
-						</div>
-					</div>
+                </li>
+                <li class="parent">
+                  <a href="#"><span>Services </span></a>
+                  
+                </li>
+                <li class="parent">
+                  <a href="#"><span> Brand </span></a>
 
-					<div class="col-lg-4">
-						<div class="top-social-icon icons-hover-black">
-							<div class="icons-hover-black">
-								<ul>
-
-									<li>
-										<a href="mailto:Support@Domain.Com" style="color: #1a2354; font-size: 14px;"><i
-												class="fa fa-envelope"></i> support@itcportal.co.in</a>
-									</li>
-
-								</ul>
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-		<div class="nav-wrap">
-			<div class="reletiv_box">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-3 d-flex align-items-center">
-							<div class="logo">
-								<a href="index.html">
-									<img style="width: 70px;" src="https://itcportal.co.in/assets/images/logo.png"
-										alt="" class="hidden-sm-down">
-									<img style="width: 70px;" src="https://itcportal.co.in/assets/images/logo.png"
-										alt="" class="hidden-md-up">
-								</a>
-							</div>
-							<!-- Phone Menu button -->
-							<button id="menu" class="menu hidden-md-up"></button>
-						</div>
-						<div class="col-md-9 nav-bg">
-							<nav class="navigation">
-								<ul style="margin-left: 220px !important;">
-									<li>
-										<a href="index.html">Home</a><i class="ion-ios-plus-empty hidden-md-up"></i>
-
-									</li>
-									<li>
-										<a href="about.html">About ITC</a><i class="ion-ios-plus-empty hidden-md-up"></i>
-
-									</li>
-									<li>
-										<a href="itcbusiness.html">ITC Businesses</a><i
-											class="ion-ios-plus-empty hidden-md-up"></i>
-
-									</li>
-									<li>
-										<a href="contact.html">Contact Us</a><i
-											class="ion-ios-plus-empty hidden-md-up"></i>
-
-									</li>
-									
-								</ul>
-
-							</nav>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
-	<!-- END HEADER -->
+                </li>
 
 
+                <li>
+                  <a href="contactus.html"><span>Contact Us</span></a>
+                </li>
+              </ul>
+            </nav>
+
+          </div>
+        </div>
+        <div class="top-line-right">
+          <div class="top-info">
+            <ul class="top-social">
+              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div id="content-wrapper">
+    <div class="slider-top slider1 hmslider1">
+      <div class="tt-mslide-wrapper">
+        <div class="swiper-container" data-loop="1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="tt-mslide one">
+                <div class="tt-mslide-entry slide1">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-12 col-md-12">
+                        <div class="slider_content">
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="tt-mslide two">
+                <div class="tt-mslide-entry slide2">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-12 col-md-12">
+                        <div class="slider_content">
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="tt-mslide three">
+                <div class="tt-mslide-entry slide3">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-12 col-md-12">
+                        <div class="slider_content">
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination fixed swiper-pagination-white"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about_sec cellpadding">
+      <div class="container">
+        <div class="row">
+          <h1 class="text-center" style="font-weight: bold">Welcome to ITC Distrutor</h1>
+          <div class="empty-space lg-40 xs-20 sm-30"></div>
+          <div class="col-md-4 col-sm-12">
+            <div class="about">
+              <img style="border-radius: 20px;" src="assets/images/home1/abt_right-2.png" alt="" class="img-responsive">
+            </div>
+          </div>
+          <div class="col-md-8 col-sm-12">
+            <h3 class="tt-title blue" style="font-weight: bold">About Us</h3>
+            <div class="empty-space lg-20 sm-20"></div>
+            <div class="simple-text">
+              <p>ITC is one of India's foremost private sector companies with a Gross Sales Value of ₹ 90,104 crores and
+                Net Profit of ₹ 15,058 crores (as on 31.03.2022). ITC has a diversified presence in FMCG, Hotels,
+                Packaging, Paperboards & Specialty Papers and Agri-Business. ITC's aspiration to be an exemplar in
+                sustainability practices is manifest in its status as the only company in the world, of its size and
+                diversity, to be carbon, water and solid waste recycling positive. In addition, ITC's businesses and
+                value chains create sustainable livelihoods for more than 6 million people, a majority of whom represent
+                the poorest in rural India. .</p>
+
+            </div>
+            <div class="empty-space lg-30"></div>
+            <div class="wrapper-inner-tab-backgrounds-first">
+              <a href="about.html">
+                <div class="sim-button button6 yellowbtn"><span>READ MORE</span></div>
+              </a>
+            </div>
+            <div class="empty-space sm-40 xs-40"></div>
+          </div>
+
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+
+    <div class="strip">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 col-sm-8 ">
+            <h3>Are you looking for professional advice for your ITC Distrutor</h3>
+          </div>
+          <div class="col-md-2 col-sm-4 col-md-offset-5">
+            <a href="contactus.html">
+              <div class="wrapper-inner-tab-backgrounds-first darkback">
+                <div class="sim-button button6"><span>Contact us</span></div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="portfolio portfolio5 cellpadding padding-extra">
+      <div class="container con_112 text-center">
+        <h3 class="tt-title blue" style="font-weight: bold;">Our Top Brands</h3>
+        <div class="empty-space lg-30 xs-20 sm-30"></div>
+        <div class="row">
+          <div class="col-md-12 budget_1">
+            <ul class="portfolio-sorting list-inline">
+              <li><a href="#" data-group="all" class="active">All</a></li>
+              <li><a href="#" data-group="business">Aashirvaad</a></li>
+              <li><a href="#" data-group="financial">Sunfeast</a></li>
+              <li><a href="#" data-group="energy">Bingo</a></li>
+              <li><a href="#" data-group="oil">Yippee! </a></li>
+              <li><a href="#" data-group="bank">Natural</a></li> 
+              <li><a href="#" data-group="futurama">Candyman</a></li> 
+            </ul>
+          </div>
+          <div class="clearfix"></div>
+          <ul class="portfolio-items list-unstyled" id="grid">
+
+            <li class="col-md-3 col-xs-6 bugets1" data-groups='["energy"]'>
+              <figure style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;" class="portfolio-item gal-item">
+                <a class="black-hover" href="projectdetails.html">
+                  <img class="img-full img-responsive" src="assets/images/project/img21.jpg" alt="">
+                  <div class="tour-layer delay-1"></div>
+                  <div class="vertical-align">
+                    <div class="wrapper-inner-tab-backgrounds-first darkback">
+                      <div class="sim-button button6"><span>Bingo</span></div>
+                    </div>
+                  </div>
+                </a>
+
+              </figure>
+            </li>
+
+            <li class="col-md-3 col-xs-6 bugets1" data-groups='["financial"]'>
+              <figure style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;" class="portfolio-item gal-item">
+                <a class="black-hover" href="projectdetails.html">
+                  <img class="img-full img-responsive" src="assets/images/project/img22.jpg" alt="">
+                  <div class="tour-layer delay-1"></div>
+                  <div class="vertical-align">
+                    <div class="wrapper-inner-tab-backgrounds-first darkback">
+                      <div class="sim-button button6"><span>SUNFEAST</span></div>
+                    </div>
+                  </div>
+                </a>
+
+              </figure>
+            </li>
+            <li class="col-md-3 col-xs-6 bugets1" data-groups='["business"]'>
+              <figure style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;" class="portfolio-item gal-item">
+                <a class="black-hover" href="projectdetails.html">
+                  <img class="img-full img-responsive" src="assets/images/project/img23.jpg" alt="">
+                  <div class="tour-layer delay-1"></div>
+                  <div class="vertical-align">
+                    <div class="wrapper-inner-tab-backgrounds-first darkback">
+                      <div class="sim-button button6"><span>AASHIRVAAD</span></div>
+                    </div>
+                  </div>
+                </a>
+              </figure>
+            </li>
 
 
-	<!--  Main Banner Start Here-->
-	<div class="main-banner banner_up">
-		<div id="rev_slider_34_1_wrapper" class="rev_slider_wrapper" data-alias="news-gallery34">
-			<!-- START REVOLUTION SLIDER 5.0.7 fullwidth mode -->
-			<div id="rev_slider_34_1" class="rev_slider" data-version="5.0.7">
-				<ul>
-					<!-- SLIDE  -->
-					<li data-index="rs-129">
-						<!-- MAIN IMAGE -->
-						<img src="assets/images/banner-1.jpg" alt="" class="rev-slidebg">
-						<!-- LAYERS -->
-						<!-- LAYER NR. 2 -->
-						<div class="tp-caption Newspaper-Title tp-resizeme " id="slide-129-layer-1"
-							data-x="['left','left','left','left']" data-hoffset="['100','50','50','30']"
-							data-y="['center','center','center','center']" data-voffset="['0','0','0','0']"
-							data-fontsize="['50','50','50','30']" data-lineheight="['55','55','55','35']"
-							data-width="['600','600','600','420']" data-height="none" data-whitespace="normal"
-							data-transform_idle="o:1;"
-							data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
-							data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;"
-							data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:0;y:0;s:inherit;e:inherit;"
-							data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
+            <li class="col-md-3 col-xs-6 bugets1" data-groups='["oil"]'>
+              <figure style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;" class="portfolio-item gal-item">
+                <a class="black-hover" href="projectdetails.html">
+                  <img class="img-full img-responsive" src="assets/images/project/img24.jpg" alt="">
+                  <div class="tour-layer delay-1"></div>
+                  <div class="vertical-align">
+                    <div class="wrapper-inner-tab-backgrounds-first darkback">
+                      <div class="sim-button button6"><span>Yippee!</span></div>
+                    </div>
+                  </div>
+                </a>
+              </figure>
+            </li>
+            <li class="col-md-3 col-xs-6 bugets1" data-groups='["futurama"]'>
+              <figure style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;" class="portfolio-item gal-item">
+                <a class="black-hover" href="projectdetails.html">
+                  <img class="img-full img-responsive" src="assets/images/project/img25.jpg" alt="">
+                  <div class="tour-layer delay-1"></div>
+                  <div class="vertical-align">
+                    <div class="wrapper-inner-tab-backgrounds-first darkback">
+                      <div class="sim-button button6"><span>Candyman</span></div>
+                    </div>
+                  </div>
+                </a>
 
-						</div>
-					</li>
-					<!-- SLIDE  -->
-					<li data-index="rs-130" data-title="" data-description="">
-						<!-- MAIN IMAGE -->
-						<img src="assets/images/banner-2.jpg" alt="" class="rev-slidebg">
-						<!-- LAYERS -->
-						<!-- LAYER NR. 2 -->
-						<div class="tp-caption Newspaper-Title   tp-resizeme " id="slide-130-layer-1"
-							data-x="['left','left','left','left']" data-hoffset="['100','50','50','30']"
-							data-y="['center','center','center','center']" data-voffset="['0','0','0','0']"
-							data-fontsize="['50','50','50','30']" data-lineheight="['55','55','55','35']"
-							data-width="['600','600','600','420']" data-height="none" data-whitespace="normal"
-							data-transform_idle="o:1;"
-							data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
-							data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;"
-							data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:0;y:0;s:inherit;e:inherit;"
-							data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
-
-						</div>
-					</li>
-					<!-- SLIDE  -->
-					<li data-index="rs-131">
-						<!-- MAIN IMAGE -->
-						<img src="assets/images/banner-3.jpg" alt="" class="rev-slidebg ">
-						<!-- LAYERS -->
-						<!-- LAYER NR. 2 -->
-						<div class="tp-caption Newspaper-Title   tp-resizeme " id="slide-131-layer-1"
-							data-x="['left','left','left','left']" data-hoffset="['100','50','50','30']"
-							data-y="['center','center','center','center']" data-voffset="['0','0','0','0']"
-							data-fontsize="['50','50','50','30']" data-lineheight="['55','55','55','35']"
-							data-width="['600','600','600','420']" data-height="none" data-whitespace="normal"
-							data-transform_idle="o:1;"
-							data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
-							data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;"
-							data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:0;y:0;s:inherit;e:inherit;"
-							data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
-
-						</div>
-					</li>
-					<!-- SLIDE  -->
-				</ul>
-				<div class="tp-bannertimer tp-bottom"></div>
-			</div>
-		</div>
-	</div>
-	<!--  Main Banner End Here-->
-
-	<!-- About_Section -->
-	<section id="about_us" class="padding ptb-xs-60">
-		<div class="container">
-			<div class="d-flex justify-content-center">
-				<h2 style="font-size: 25px; color:#1b2355" class="mb-5">About Company</h2>
-			</div>
-			<div class="row d-flex align-items-center">
-				<div class="col-md-12 col-lg-4">
-					<img style="border-radius: 20px; box-shadow: 0px 0px 25px 10px rgb(0 0 0 / 20%);"
-						src="https://itcportal.co.in/home/assets/images/about.jpg" class="repo-full" alt="">
-				</div>
-				<div class="col-md-12 col-lg-8 about-left">
+              </figure>
+            </li>
+            <li class="col-md-3 col-xs-6 bugets1" data-groups='["bank"]'>
+              <figure style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;" class="portfolio-item gal-item">
+                <a class="black-hover" href="projectdetails.html">
+                  <img class="img-full img-responsive" src="assets/images/project/img26.jpg" alt="">
+                  <div class="tour-layer delay-1"></div>
+                  <div class="vertical-align">
+                    <div class="wrapper-inner-tab-backgrounds-first darkback">
+                      <div class="sim-button button6"><span>Natural</span></div>
+                    </div>
+                  </div>
+                </a>
+              </figure>
+            </li>
 
 
-					<p style="color: black; text-align: justify; font-size: 16px;">
-						ITC is one of India's foremost private sector companies with a Gross Sales Value of ₹ 74,979
-						crores and Net Profit of ₹ 13,032 crores (as on 31.03.2021). ITC has a diversified presence in
-						FMCG, Hotels, Packaging, Paperboards & Specialty Papers and Agri-Business. ITC's aspiration to
-						be an exemplar in sustainability practices is manifest in its status as the only company in the
-						world, of its size and diversity, to be carbon, water and solid waste recycling positive. In
-						addition, ITC's businesses and value chains create sustainable livelihoods for more than 6
-						million people, a majority of whom represent the poorest in rural India.
+            <li class="col-md-3 col-xs-6 bugets1" data-groups='["simpsons", "people"]'>
+              <figure style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;" class="portfolio-item gal-item">
+                <a class="black-hover" href="projectdetails.html">
+                  <img class="img-full img-responsive" src="assets/images/project/img27.jpg" alt="">
+                  <div class="tour-layer delay-1"></div>
+                  <div class="vertical-align">
+                    <div class="wrapper-inner-tab-backgrounds-first darkback">
+                      <div class="sim-button button6 "><span>Candyman</span></div>
+                    </div>
+                  </div>
+                </a>
+              </figure>
+            </li>
 
-					</p>
+            <li class="col-md-3 col-xs-6 bugets1" data-groups='["financial"]'>
+              <figure style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;" class="portfolio-item gal-item">
+                <a class="black-hover" href="projectdetails.html">
+                  <img class="img-full img-responsive" src="assets/images/project/img28.jpg" alt="">
+                  <div class="tour-layer delay-1"></div>
+                  <div class="vertical-align">
+                    <div class="wrapper-inner-tab-backgrounds-first darkback">
+                      <div class="sim-button button6"><span>SUNFEAST</span></div>
+                    </div>
+                  </div>
+                </a>
+              </figure>
+            </li>
+            <!-- sizer -->
+            <li class="col-md-3 col-xs-6 shuffle_sizer"></li>
 
-				</div>
+
+          </ul>
+          <!--end portfolio grid -->
 
 
+        </div>
+        <!--end row -->
+      </div> <!-- end container-->
+    </section>
+    <div class="our_projects cellpadding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 text-center">
+            <h3 class="tt-title blue">Wholesome Goodness of Nutrition & Taste</h3>
+            <div class="empty-space lg-15 sm-15"></div>
 
-			</div>
+            <div class="empty-space sm-30 xs-15 "></div>
+          </div>
 
-		</div>
-	</section>
-	<!-- About_Section_End -->
+        </div>
+      </div>
+      <div class="empty-space lg-50"></div>
+      <div class="project_slider">
+        <div class="owl-carousel owl-carousel1 owl-theme">
+
+          <div class="grid">
+            <figure class="effect-ming">
+              <img class="img-full img-responsive" src="assets/images/home1/project1.jpg" alt="">
+              <figcaption>
+                <p class="text-center">Goodness of Vitamins/Minerals</p>
+
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="grid">
+            <figure class="effect-ming">
+              <img class="img-full img-responsive" src="assets/images/home1/project2.jpg" alt="">
+              <figcaption>
+                <p>Goodness of Protein</p>
+
+              </figcaption>
+            </figure>
+          </div>
 
 
+          <div class="grid">
+            <figure class="effect-ming">
+              <img class="img-full img-responsive" src="assets/images/home1/project3.jpg" alt="">
+              <figcaption>
+                <p>Goodness of Fibre</p>
 
-	<!-- Service_Section -->
-	<section id="service" class="padding ptb-xs-60">
-		<div class="container">
-			<div class="row text-center">
-				<div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 mb-30">
-					<div class="heading- box">
-						<h2 class="pb-4" style="color: #1b2355; font-size:25px">ITC BUSINESSES</h2>
-					</div>
+              </figcaption>
+            </figure>
+          </div>
 
-				</div>
-			</div>
-			<div class="row">
 
-				<!--Services Block-->
-				<div class="services-block col-lg-6 col-md-6 col-xs-12 mb-30">
-					<div class="inner-box hvr-float">
-						<div class="image containerz">
-							<img style="width: 100%; object-fit: cover; border-radius: 0px; border: 3px double #1b2355;" src="https://itcportal.co.in/home/assets/images/business-fmcg.jpg" alt="">
-							<div class="centered">FMCG <br>
-								ITC's rich mix of FMCG portfolio is designed and customised to delight consumers in myriad ways.</div>
-						</div>
-						
-					</div>
-				</div>
+          <div class="grid">
+            <figure class="effect-ming">
+              <img class="img-full img-responsive" src="assets/images/home1/project4.jpg" alt="">
+              <figcaption>
+                <p>Nutrients/Ingredients That Support Immunity</p>
 
-				<!--Services Block-->
-				<div class="services-block col-lg-6 col-md-6 col-xs-12 mb-30">
-					<div class="inner-box hvr-float">
-						<div class="image containerz">
-							<img style="width: 100%; object-fit: cover; border-radius: 0px; border: 3px double #1b2355;" 
-							src="https://itcportal.co.in/home/assets/images/business-hotel.jpg" alt="">
-							<div class="centered">HOTELS <br>
-								Launched in 1975, ITC Hotels, India's premier chain of luxury hotels, has become synonymous with Indian hospitality.</div>
-						</div>
-						
-					</div>
-				</div>
+              </figcaption>
+            </figure>
+          </div>
 
-				<div class="services-block col-lg-6 col-md-6 col-xs-12 mb-30">
-					<div class="inner-box hvr-float">
-						<div class="image containerz">
-							<img style="width: 100%; object-fit: cover; border-radius: 0px; border: 3px double #1b2355;" 
-							src="https://itcportal.co.in/home/assets/images/business-agri.jpg" alt="">
-							<div class="centered">AGRI BUSINESSES<br>
-								ITC is one of India's largest integrated agri business enterprises with significant presence across every node of the agri value chain.	
-							</div>
-						</div>
-						
-					</div>
-				</div>
 
-				<div class="services-block col-lg-6 col-md-6 col-xs-12 mb-30">
-					<div class="inner-box hvr-float">
-						<div class="image containerz">
-							<img style="width: 100%; object-fit: cover; border-radius: 0px; border: 3px double #1b2355;" 
-							src="https://itcportal.co.in/home/assets/images/business-paperboards.jpg" alt="">
-							<div class="centered">PAPERBOARDS & SPECIALTY PAPERS<br>
-								ITC's Paperboards and Specialty Papers Business is India's largest, technologically advanced and most eco-friendly paper and paperboards business.	
-							</div>
-						</div>
-						
-					</div>
-				</div>
+          <div class="grid">
+            <figure class="effect-ming">
+              <img class="img-full img-responsive" src="assets/images/home1/project1.jpg" alt="">
+              <figcaption>
+                <p class="text-center">Goodness of Vitamins/Minerals</p>
 
-				<div class="services-block col-lg-6 col-md-6 col-xs-12 mb-30">
-					<div class="inner-box hvr-float">
-						<div class="image containerz">
-							<img style="width: 100%; object-fit: cover; border-radius: 0px; border: 3px double #1b2355;" 
-							src="https://itcportal.co.in/home/assets/images/business-it.jpg" alt="">
-							<div class="centered">INFORMATION TECHNOLOGY<br>
-								ITC Infotech is a specialized global technology services provider, led by Business and Technology Consulting.
-							</div>
-						</div>
-						
-					</div>
-				</div>
-
-				<div class="services-block col-lg-6 col-md-6 col-xs-12 mb-30">
-					<div class="inner-box hvr-float">
-						<div class="image containerz">
-							<img style="width: 100%; object-fit: cover; border-radius: 0px; border: 3px double #1b2355;" 
-							src="https://itcportal.co.in/home/assets/images/business-pakaging.jpg" alt="">
-							<div class="centered">PACKAGING<br>
-								ITC's Packaging & Printing Business is the largest value added converter of paperboard packaging in South Asia. It converts over 70,000 tonnes of paper, paperboard and laminates per annum.
-							</div>
-						</div>
-						
-					</div>
-				</div>
-
-				
-
-			</div>
-		</div>
-	</section>
-	<!-- Service_Section_End -->
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 
+    <div class="request_free request_free_02 bg-white">
+      <div class="left-image">
+        <img src="assets/images/home2/left-img-2.png" class="img-responsive" alt="">
+      </div>
+      <div class="container">
+        <div class="row request-form">
+          <div class="right_content ">
+            <h3 class="tt-title blue">
+              Request a free Advice</h3>
+            <div class="empty-space lg-30 sm-30"></div>
+            <form class="request_contact">
+
+              <div class="form-group col-md-6 pr0">
+                <input type="Name" class="form-control" id="Name" name="Name" placeholder="Name" required>
+              </div>
+
+              <div class="form-group col-md-5 pr0">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+              </div>
+              <div class="form-group col-md-6 pr0">
+                <input type="Phone" class="form-control" id="Phone" name="Phone" placeholder="Phone" required>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control" id="Address" name="Address" placeholder="Address" required>
+              </div>
+              <div class="form-group col-md-6 pr0">
+                <input type="State" class="form-control" id="State" name="State" placeholder="State" required>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control" id="Pin" name="Pin" placeholder="Pin" required>
+              </div>
+              <div class="form-group col-md-12">
+                <textarea class="form-control" name="message" id="message" rows="1" placeholder="Message"></textarea>
+              </div>
+              <div class="form-group col-md-12">
+                <button type="submit" value="submit" class="btn  sim-button button6 bluebtn form-control"><span>submit
+                    now</span></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="tt-footer">
+      <div class="tt-footer-inner">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4 col-md-4 ">
+              <a class="tt-footer-logo" href="index.html">
+                <img class="img-responsive" src="https://www.itcportal.com/images/logo_itc.png" alt="">
+              </a>
+              <div class="simple-text dark padding-sm">
+                <p>“ITC is one of India's foremost private sector companies with a Gross Sales Value... ”</p>
+              </div>
+              <ul class="address">
+
+                <li><i class="fa fa-map-marker"></i> ITC LIMITED, VIRGINIA HOUSE, 37, J. L. NEHRU ROAD, KOLKATA, INDIA -
+                  700071 </li>
+                <li><i class="fa fa-envelope-o"></i><a href="Support@itcportal.co.in"> support@itcportal.co.in</a></li>
+              </ul>
+
+              <div class="empty-space xs-25 sm-25"></div>
+            </div>
+            <div class="col-sm-4 col-md-4">
+              <!-- TT-FOOOTER-TITLE -->
+              <h4 class="tt-foooter-title h5"><small> Useful Links</small></h4>
+              <ul class="tt-footer-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="faq.html">Faq</a></li>
+                <li><a href="testimonial.html">Brand</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+              </ul>
+              <div class="empty-space xs-25 sm-25"></div>
+            </div>
 
 
-	<!-- FOOTER -->
-	<footer id="footer" class="mb-5" style="background-color: #f4f4f4; color:black">
-		<div id="footer-widgets" class="container style-1">
-			<div class="row">
-				<div class="col-md-4">
-					<div class="widget widget_text d-flex justify-content-center">
-						<div class="textwidget ">
-							<svg style="fill: #1b2355;
-							height: 25px;
-							width: 25px;
-							margin: 20px 0px 10px;" viewBox="0 0 477 477" xmlns="http://www.w3.org/2000/svg"><path d="M238.4 0C133 0 47.2 85.8 47.2 191.2c0 12 1.1 24.1 3.4 35.9.1.7.5 2.8 1.3 6.4 2.9 12.9 7.2 25.6 12.8 37.7 20.6 48.5 65.9 123 165.3 202.8 2.5 2 5.5 3 8.5 3s6-1 8.5-3c99.3-79.8 144.7-154.3 165.3-202.8 5.6-12.1 9.9-24.7 12.8-37.7.8-3.6 1.2-5.7 1.3-6.4 2.2-11.8 3.4-23.9 3.4-35.9C429.6 85.8 343.8 0 238.4 0zm161.2 222.4c0 .2-.1.4-.1.6-.1.5-.4 2-.9 4.3v.2c-2.5 11.2-6.2 22.1-11.1 32.6-.1.1-.1.3-.2.4-18.7 44.3-59.7 111.9-148.9 185.6-89.2-73.7-130.2-141.3-148.9-185.6-.1-.1-.1-.3-.2-.4-4.8-10.4-8.5-21.4-11.1-32.6v-.2c-.6-2.3-.8-3.8-.9-4.3 0-.2-.1-.4-.1-.7-2-10.3-3-20.7-3-31.2 0-90.5 73.7-164.2 164.2-164.2s164.2 73.7 164.2 164.2c0 10.6-1 21.1-3 31.3z"></path><path d="M238.4 71.9c-66.9 0-121.4 54.5-121.4 121.4s54.5 121.4 121.4 121.4 121.4-54.5 121.4-121.4S305.3 71.9 238.4 71.9zm0 215.8c-52.1 0-94.4-42.4-94.4-94.4s42.4-94.4 94.4-94.4 94.4 42.4 94.4 94.4-42.3 94.4-94.4 94.4z"></path></svg>
-							<p>
-								ITC LIMITED, Virginia House, 37, J. L. Nehru Road, Kolkata, India - 700071
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="widget widget_text d-flex justify-content-center">
-						<div class="textwidget ">
-							<svg style="fill: #1b2355;
-							height: 25px;
-							width: 25px;
-							margin: 20px 0px 10px;" viewBox="0 0 483.3 483.3" xmlns="http://www.w3.org/2000/svg"><path d="M424.3 57.75H59.1c-32.6 0-59.1 26.5-59.1 59.1v249.6c0 32.6 26.5 59.1 59.1 59.1h365.1c32.6 0 59.1-26.5 59.1-59.1v-249.5c.1-32.6-26.4-59.2-59-59.2zm32.1 308.7c0 17.7-14.4 32.1-32.1 32.1H59.1c-17.7 0-32.1-14.4-32.1-32.1v-249.5c0-17.7 14.4-32.1 32.1-32.1h365.1c17.7 0 32.1 14.4 32.1 32.1v249.5h.1z"></path><path d="M304.8 238.55l118.2-106c5.5-5 6-13.5 1-19.1-5-5.5-13.5-6-19.1-1l-163 146.3-31.8-28.4c-.1-.1-.2-.2-.2-.3-.7-.7-1.4-1.3-2.2-1.9L78.3 112.35c-5.6-5-14.1-4.5-19.1 1.1-5 5.6-4.5 14.1 1.1 19.1l119.6 106.9-119.1 111.5c-5.4 5.1-5.7 13.6-.6 19.1 2.7 2.8 6.3 4.3 9.9 4.3 3.3 0 6.6-1.2 9.2-3.6l120.9-113.1 32.8 29.3c2.6 2.3 5.8 3.4 9 3.4s6.5-1.2 9-3.5l33.7-30.2 120.2 114.2c2.6 2.5 6 3.7 9.3 3.7 3.6 0 7.1-1.4 9.8-4.2 5.1-5.4 4.9-14-.5-19.1l-118.7-112.7z"></path></svg>
-							<p>
-								support@itcportal.co.in
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="widget widget_text d-flex justify-content-center">
-						<div class="textwidget ">
-							<svg style="fill: #1b2355;
-							height: 25px;
-							width: 25px;
-							margin: 20px 0px 10px;" viewBox="0 0 473.806 473.806" xmlns="http://www.w3.org/2000/svg"><path d="M374.456 293.506c-9.7-10.1-21.4-15.5-33.8-15.5-12.3 0-24.1 5.3-34.2 15.4l-31.6 31.5c-2.6-1.4-5.2-2.7-7.7-4-3.6-1.8-7-3.5-9.9-5.3-29.6-18.8-56.5-43.3-82.3-75-12.5-15.8-20.9-29.1-27-42.6 8.2-7.5 15.8-15.3 23.2-22.8 2.8-2.8 5.6-5.7 8.4-8.5 21-21 21-48.2 0-69.2l-27.3-27.3c-3.1-3.1-6.3-6.3-9.3-9.5-6-6.2-12.3-12.6-18.8-18.6-9.7-9.6-21.3-14.7-33.5-14.7s-24 5.1-34 14.7l-.2.2-34 34.3c-12.8 12.8-20.1 28.4-21.7 46.5-2.4 29.2 6.2 56.4 12.8 74.2 16.2 43.7 40.4 84.2 76.5 127.6 43.8 52.3 96.5 93.6 156.7 122.7 23 10.9 53.7 23.8 88 26 2.1.1 4.3.2 6.3.2 23.1 0 42.5-8.3 57.7-24.8.1-.2.3-.3.4-.5 5.2-6.3 11.2-12 17.5-18.1 4.3-4.1 8.7-8.4 13-12.9 9.9-10.3 15.1-22.3 15.1-34.6 0-12.4-5.3-24.3-15.4-34.3l-54.9-55.1zm35.8 105.3c-.1 0-.1.1 0 0-3.9 4.2-7.9 8-12.2 12.2-6.5 6.2-13.1 12.7-19.3 20-10.1 10.8-22 15.9-37.6 15.9-1.5 0-3.1 0-4.6-.1-29.7-1.9-57.3-13.5-78-23.4-56.6-27.4-106.3-66.3-147.6-115.6-34.1-41.1-56.9-79.1-72-119.9-9.3-24.9-12.7-44.3-11.2-62.6 1-11.7 5.5-21.4 13.8-29.7l34.1-34.1c4.9-4.6 10.1-7.1 15.2-7.1 6.3 0 11.4 3.8 14.6 7l.3.3c6.1 5.7 11.9 11.6 18 17.9 3.1 3.2 6.3 6.4 9.5 9.7l27.3 27.3c10.6 10.6 10.6 20.4 0 31-2.9 2.9-5.7 5.8-8.6 8.6-8.4 8.6-16.4 16.6-25.1 24.4-.2.2-.4.3-.5.5-8.6 8.6-7 17-5.2 22.7l.3.9c7.1 17.2 17.1 33.4 32.3 52.7l.1.1c27.6 34 56.7 60.5 88.8 80.8 4.1 2.6 8.3 4.7 12.3 6.7 3.6 1.8 7 3.5 9.9 5.3.4.2.8.5 1.2.7 3.4 1.7 6.6 2.5 9.9 2.5 8.3 0 13.5-5.2 15.2-6.9l34.2-34.2c3.4-3.4 8.8-7.5 15.1-7.5 6.2 0 11.3 3.9 14.4 7.3l.2.2 55.1 55.1c10.3 10.2 10.3 20.7.1 31.3zm-154.2-286.1c26.2 4.4 50 16.8 69 35.8s31.3 42.8 35.8 69c1.1 6.6 6.8 11.2 13.3 11.2.8 0 1.5-.1 2.3-.2 7.4-1.2 12.3-8.2 11.1-15.6-5.4-31.7-20.4-60.6-43.3-83.5s-51.8-37.9-83.5-43.3c-7.4-1.2-14.3 3.7-15.6 11s3.5 14.4 10.9 15.6zm217.2 96.3c-8.9-52.2-33.5-99.7-71.3-137.5s-85.3-62.4-137.5-71.3c-7.3-1.3-14.2 3.7-15.5 11-1.2 7.4 3.7 14.3 11.1 15.6 46.6 7.9 89.1 30 122.9 63.7 33.8 33.8 55.8 76.3 63.7 122.9 1.1 6.6 6.8 11.2 13.3 11.2.8 0 1.5-.1 2.3-.2 7.3-1.1 12.3-8.1 11-15.4z"></path></svg>
-							<p>
-								18005325800
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<p class="d-flex justify-content-center mt-4 mb-5">© 2022 ITC Businesses - All Rights Reserved.</p>
+            <div class="col-xs-12 col-md-4 col-sm-4">
+              <h4 class="tt-foooter-title h5"><small>Subscribe Newsletter</small></h4>
+              <div class="footerSubscribe">
 
-		</div>
-		
-	</footer>
-	<!-- END FOOTER -->
+                <div class="footer_sub">
+                  <input type="text" name="" value="" placeholder="Enter your email address">
+                  <button type="button" name="button"> <i class="fa fa-envelope" aria-hidden="true"></i> </button>
+                </div>
 
-	<!-- Site Wraper End -->
-	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
-	<script type="text/javascript" src="assets/js/tether.min.js"></script>
-	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-	<script src="assets/js/jquery.easing.js" type="text/javascript"></script>
+              </div>
+              <label class="footerSocial">Get In Touch.</label>
+              <ul class="tt-socail">
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+        <div class="tt-copy">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="tt-copy-left">Copyright © ITC 2022. All rights reserved. </div>
+              </div>
 
-	<!-- fancybox Js -->
-	<script src="assets/js/jquery.mousewheel-3.0.6.pack.js" type="text/javascript"></script>
-	<script src="assets/js/jquery.fancybox.pack.js" type="text/javascript"></script>
-	<!-- carousel Js -->
-	<script src="assets/js/owl.carousel.js" type="text/javascript"></script>
+            </div>
+          </div>
+        </div>
+        </footer>
+  <!-- js -->
+  <div class="popup">
+    <div class="popup-content">
+        <h1>X</h1>
+        <h2 style="color:white">Subscribe...</h2>
+        <form
+        action="https://www.themechampion.com/templates/bizada_html_landing_page/theme/contact_process.php"
+        method="post" id="contactForm">
+        <div class="form-group col-md-6 pl0">
+           <input type="text" name="name" id="name" class="form-control" placeholder="Name" required>
+        </div>
+        <div class="form-group col-md-6 pr0">
+           <input type="email" id="email" name="email" class="form-control" placeholder="Email"
+              required>
+        </div>
+        <div class="form-group col-md-6 pr0">
+           <input type="Phone" id="Phone" name="Phone" class="form-control" placeholder="Phone"
+              required>
+        </div>
+        <div class="form-group col-md-6 pr0">
+           <input type="Address" id="Address" name="Address" class="form-control" placeholder="Address"
+              required>
+        </div>
+        <div class="form-group col-md-6 pr0">
+           <input type="State" id="State" name="State" class="form-control" placeholder="State"
+              required>
+        </div>
+        <div class="form-group col-md-6 pr0">
+           <input type="Pin" id="Pin" name="Pin" class="form-control" placeholder="Pin"
+              required>
+        </div>
+       
+        <div class="form-group">
+           <textarea class="form-control" id="message" name="message" rows="3"
+              placeholder="Message"></textarea>
+        </div>
+        <button type="submit" name="contactform" id="contactform"
+           class="sim-button button6 btn btn-primary yellowbtn"><span>send Message</span></button>
+     </form>
+      </div>
+</div>
 
-	<!-- imagesloaded Js -->
-	<script src="assets/js/imagesloaded.pkgd.min.js" type="text/javascript"></script>
-	<!-- masonry,isotope Effect Js -->
-	<script src="assets/js/imagesloaded.pkgd.min.js" type="text/javascript"></script>
-	<script src="assets/js/isotope.pkgd.min.js" type="text/javascript"></script>
-	<script src="assets/js/masonry.pkgd.min.js" type="text/javascript"></script>
-	<script src="assets/js/jquery.appear.js" type="text/javascript"></script>
-	<!-- Mail Function Js -->
-	<script src="assets/js/mail.js" type="text/javascript"></script>
+<script>
+    const popup = document.querySelector('.popup');
+    const x = document.querySelector('.popup-content h1')
 
-	<!-- revolution Js -->
-	<script type="text/javascript" src="assets/js/jquery.themepunch.tools.min.js"></script>
-	<script type="text/javascript" src="assets/js/jquery.themepunch.revolution.min.js"></script>
-	<script type="text/javascript" src="assets/extensions/revolution.extension.slideanims.min.js"></script>
-	<script type="text/javascript" src="assets/extensions/revolution.extension.layeranimation.min.js"></script>
-	<script type="text/javascript" src="assets/extensions/revolution.extension.navigation.min.js"></script>
-	<script type="text/javascript" src="assets/extensions/revolution.extension.parallax.min.js"></script>
-	<script type="text/javascript" src="assets/js/jquery.revolution.js"></script>
-	<!-- custom Js -->
-	<script src="assets/js/custom.js" type="text/javascript"></script>
-	<script src="../../../../hosting_popup/js/hots_popup.js"></script>
+    window.addEventListener('load', () => {
+        popup.classList.add('showPopup');
+        popup.childNodes[1].classList.add('showPopup');
+    })
+    x.addEventListener('click', () => {
+        popup.classList.remove('showPopup');
+        popup.childNodes[1].classList.remove('showPopup');
+    })
+</script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/swiper.jquery.min.js"></script>
+  <script src="assets/js/global.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/jquery.flexslider-min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/jquery.barfiller.js"></script>
+  <script src="assets/js/jquery.prettyPhoto.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.shuffle.min.js"></script>
+  <script src="assets/js/custom.js"></script>
 
+  </div>
 </body>
 
-<!-- Mirrored from theembazaar.com/demo/eforest/buildility/v1/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Nov 2022 13:56:43 GMT -->
+
 
 </html>
