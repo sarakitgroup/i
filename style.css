@@ -79,7 +79,7 @@ body{
 .login-popup .box .form{
 	flex:0 0 50%;
 	max-width: 50%;
-	padding:40px 30px;
+	
 }
 
 .login-popup .box .form h1{
