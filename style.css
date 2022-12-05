@@ -65,8 +65,7 @@ body{
 	background-image: url('bacroject.jpg');
 	background-size: cover;
 	background-position: center;
-	animation: zoomInOut 7s linear infinite;
-	z-index: -1;
+	
 
 }
 @keyframes zoomInOut{
